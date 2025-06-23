@@ -1,4 +1,4 @@
-/* RESET */
+/* RESET عام */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   font-family: 'Courier Prime', monospace;
 }
 
-/* HERO SECTION - الخلفية الأصلية دون أي blur */
+/* قسم الهيرو مع الخلفية الأصلية */
 .hero {
   position: relative;
   width: 100%;
@@ -19,12 +19,13 @@ body {
   background: url('3.png') no-repeat center center/cover;
 }
 
-/* تثبيت النص والأزرار في الركن العلوي */
+/* نص “الهيرو” مثبت في منتصف الارتفاع من الجهة اليمنى */
 .hero-content {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  max-width: 500px;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  max-width: 400px;
   color: #fff;
 }
 .hero-content h1 {
@@ -42,7 +43,6 @@ body {
 /* الأزرار الصفراء */
 .buttons .btn {
   display: inline-block;
-  font-family: 'Courier Prime', monospace;
   font-size: 1rem;
   font-weight: 700;
   color: #111;

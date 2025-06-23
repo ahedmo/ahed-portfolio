@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
 }
+
 /* ===== BODY ===== */
 body {
   font-family: 'Courier Prime', monospace;
@@ -16,57 +17,18 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  /* هذه الإضافة فقط: */
-  background: url('background.png') no-repeat center center/cover;
-  /* باقي الشروط كما هي: */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   height: 100vh;
-}
-
-/* ===== IMAGE CARD ===== */
-.image-card {
-  position: relative;
-  width: 300px;
-  height: 500px;
-  margin-right: 3rem;
-  flex-shrink: 0;
-}
-.image-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.image-card .blurred {
-  filter: blur(12px);
-  transform: scale(1.1);
-}
-.image-card .clear-half {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  border: 2px solid #fff;
-  border-radius: 16px;
-  box-sizing: border-box;
-}
-.image-card .clear-half .clear {
-  position: relative;
-  width: 200%;
-  height: 100%;
-  transform: translateX(-50%);
-  filter: none;
-  object-fit: cover;
+  /* الخلفية الأصلية دون أي Blur أو تعديلات */
+  background: url('3.png') no-repeat center center/cover;
 }
 
 /* ===== HERO CONTENT ===== */
 .hero-content {
-  max-width: 500px;
+  text-align: center;
+  padding: 2rem;
 }
 .hero-content h1 {
   font-size: 3.5rem;
@@ -91,4 +53,10 @@ body {
   padding: 0.75rem 1.5rem;
   border: 2px solid #111;
   border-radius: 9999px;
-  margin
+  margin: 0 0.5rem;
+  transition: transform 0.1s, opacity 0.2s;
+}
+.buttons .btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}

@@ -1,38 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ahed Mounis – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahed Mounis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-image: url('3.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      padding: 20px;
+    }
+
+    .text {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #999;
+      margin: 10px 0 30px;
+      font-size: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 40px;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 3px solid #ffd500;
+      backdrop-filter: blur(0px);
+    }
+
+    .btn-yellow {
+      background-color: #ffd500;
+      color: #111;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #ffd500;
+    }
+
+    .btn:hover {
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 10px #ffd50088;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <section class="hero">
-    <div class="content">
-      <h1>Ahed Mounis</h1>
-      <p>Art Director & Motion Designer</p>
+  <div class="content">
+    <img src="3.png" alt="Ahed Mounis" style="max-height: 500px; border-radius: 10px; box-shadow: 0 0 10px #000000aa;" />
+    <div class="text">
+      <h1>AHED MOUNIS</h1>
+      <p class="subtitle">Art Director & Motion Designer</p>
       <div class="buttons">
-        <a href="#story" class="btn">My Story</a>
-        <a href="#work" class="btn">My Work</a>
+        <button class="btn btn-yellow">My Story</button>
+        <button class="btn btn-outline">My Work</button>
       </div>
     </div>
-  </section>
-  <section id="story" class="story-section">
-  <div class="story-container">
-    <h2>My Story</h2>
-    <p>
-      I started my creative journey back in 2016 — when I first opened Photoshop  
-      while studying IT at the Islamic University. What began as curiosity,  
-      soon became a mission to visualize stories that connect and inspire.
-      <br><br>
-      In 2018, I shifted my academic path to Multimedia at UCAS — diving deep into design, motion graphics, and Blender.
-      <br><br>
-      Today, I am an <strong>Art Director & Motion Designer</strong> with a passion for building brands,  
-      leading visual teams, and creating visuals that leave an impact.
-    </p>
   </div>
-</section>
-
 </body>
 </html>

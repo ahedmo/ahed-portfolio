@@ -23,7 +23,7 @@ body {
 .hero-content {
   position: absolute;
   top: 50%;
-  right: 2rem;
+  right: 25%;
   transform: translateY(-50%);
   max-width: 400px;
   color: #fff;

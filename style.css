@@ -1,1 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
 
+.hero {
+  height: 100vh;
+  background: url('assets/images/2.png') no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  background: #FFD700;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+}

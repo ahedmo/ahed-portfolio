@@ -98,3 +98,20 @@ body {
   color: #eee;
   margin-bottom: 1rem;
 }
+/* Story-section overlay: خفّف الحدة والضبابية */
+.story-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* قلّلنا الشفافية إلى 5% فقط */
+  background: rgba(255, 255, 255, 0.05);
+  /* قلّلنا الـ blur من 10px إلى 5px */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
+/* الفقرات تكون مائلة */
+.story-section p {
+  font-style: italic;
+}

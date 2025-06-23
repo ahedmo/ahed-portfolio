@@ -1,117 +1,105 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
-}
-
-.hero {
-  height: 100vh;
-  background: url('3.png') no-repeat center center / cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.content {
-  max-width: 600px;
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 20px;
-  font-style: italic;
-  color: #ccc;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.btn {
-  background-color: #FFD500;
-  color: black;
-  padding: 14px 30px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-  border: none;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(0px);
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  backdrop-filter: blur(3px);
-  box-shadow: 0 0 20px #FFD50080;
-  cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .btn {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-}
-.story-section {
-  padding: 100px 10%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-align: right;
-}
-
-.story-container {
-  max-width: 800px;
-  margin-left: auto;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.story-section h2 {
-  font-size: 42px;
-  margin-bottom: 30px;
-  color: #FFD500;
-}
-
-.story-section p {
-  font-size: 20px;
-  line-height: 1.8;
-  color: #ddd;
-}
-
-@media (max-width: 480px) {
-  .buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .btn {
-    width: 100%;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahed Mounis</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: url('3.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      padding: 60px 24px;
+      background: rgba(0,0,0,0.0); /* بدون خلفية */
+      border-radius: 32px;
+      max-width: 600px;
+      width: 100%;
+      margin-top: 48px;
+    }
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 0.25em;
+      letter-spacing: 2px;
+      color: #fff;
+    }
+    .subtitle {
+      font-size: 1.35em;
+      font-style: italic;
+      color: #bdbdbd;
+      margin-bottom: 2em;
+      margin-top: 0;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+    .btn {
+      padding: 16px 38px;
+      border-radius: 40px;
+      border: 3px solid #FFD500;
+      background-color: #FFD500;
+      color: #191919;
+      font-size: 1.2em;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(.25,1.3,.57,1.3);
+      outline: none;
+      box-shadow: none;
+      filter: none;
+      backdrop-filter: blur(0);
+    }
+    .btn.secondary {
+      background-color: transparent;
+      color: #FFD500;
+    }
+    .btn:hover, .btn:focus {
+      transform: scale(1.06);
+      backdrop-filter: blur(3px);
+      box-shadow: 0 0 20px #FFD50055;
+      z-index: 2;
+      filter: brightness(1.1);
+    }
+    /* Responsive */
+    @media (max-width: 700px) {
+      h1 { font-size: 2em; }
+      .subtitle { font-size: 1em; }
+      .container { padding: 30px 8px; }
+      .btn { font-size: 1em; padding: 12px 16px; }
+      .buttons { gap: 12px; flex-direction: column; }
+    }
+    @media (max-width: 430px) {
+      .container { padding: 12px 0; }
+      h1 { font-size: 1.2em; }
+      .btn { width: 90vw; padding: 12px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ahed Mounis</h1>
+    <p class="subtitle">Art Director &amp; Motion Designer</p>
+    <div class="buttons">
+      <button class="btn">My Story</button>
+      <button class="btn secondary">My Work</button>
+    </div>
+  </div>
+</body>
+</html>

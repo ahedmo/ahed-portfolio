@@ -80,6 +80,30 @@ p {
     padding: 12px 24px;
   }
 }
+.story-section {
+  padding: 100px 10%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: right;
+}
+
+.story-container {
+  max-width: 800px;
+  margin-left: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.story-section h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #FFD500;
+}
+
+.story-section p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ddd;
+}
 
 @media (max-width: 480px) {
   .buttons {

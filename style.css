@@ -57,4 +57,7 @@ body {
 .buttons .btn:hover {
   transform: translateY(-2px);
   opacity: 0.85;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }

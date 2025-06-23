@@ -21,26 +21,28 @@
     </div>
   </section>
 
-  <!-- صفحة قصتي -->
+  <!-- Story Section -->
   <section id="story" class="story-section">
-    <h2>قصتي</h2>
-    <p>ولدت في غزة عام 1998، وبدأ شغفي بالفن والتصميم منذ الصغر، حيث كنت أرسم لوحات يدوية قبل أن أكتشف جمال العالم الرقمي وأنتقل إليه.</p>
-    <h3>رحلة التعلم</h3>
-    <p>بدأت بتصميم رسومات ثابتة وشعارات للعلامات التجارية، ثم انتقلت إلى المونتاج على Adobe Premiere، وبعدها استكشفت عالم الحركة والمؤثرات في After Effects، وأخيراً أعمل اليوم على تطوير مهاراتي في النمذجة والتحريك ثلاثي الأبعاد باستخدام Blender.</p>
-    <h3>الدرب المهني</h3>
-    <p>انطلقت مهنيّاً مع منصة Motion X للمشاريع الإبداعية، وعملت على منصات العمل الحر مثل Upwork وغيرها كمستقل، ثم أسست فريقي الخاص لأشارك زملائي شغف الإبداع، وبعدها انضممت إلى شركة <strong>دوت موشن</strong> كـArt Director لأقود فرقاً فنية نحو أفضل النتائج.</p>
-    <p>رغم انعدام الإمكانات والظروف الصعبة في غزة والحرب المستمرة، أواصل تطوير مهاراتي في الـ3D وأرفع جودة أعمالي دائماً بالإصرار والإبداع.</p>
-    <p><strong>أنا عهد مؤنس</strong></p>
+    <h2>My Story</h2>
+    <p>I was born in Gaza in 1998, and my passion for art and design started at a young age, sketching handmade illustrations before discovering the beauty of the digital world.</p>
+    <h3>Learning Journey</h3>
+    <p>I began by creating static designs and brand logos, then moved on to editing with Adobe Premiere, explored motion and effects in After Effects, and today I'm honing my skills in 3D modeling and animation with Blender.</p>
+    <h3>Professional Path</h3>
+    <p>I launched my career on the Motion X platform, worked as a freelancer on Upwork and similar sites, founded my own creative team, and later joined Dot Motion as an Art Director, leading talented teams to achieve outstanding results.</p>
+    <p>Despite limited resources and the ongoing conflict in Gaza, I continuously develop my 3D expertise and elevate the quality of my work through determination and creativity.</p>
+    <p><strong>I am Ahed Mounis.</strong></p>
   </section>
 
-  <!-- Optional: include a script for smooth scroll if needed -->
+  <!-- Smooth scroll script -->
   <script>
-    document.querySelector('.btn[href^="#"]').addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if(target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
+    document.querySelectorAll('.btn[href^="#"]').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
   </script>
 </body>

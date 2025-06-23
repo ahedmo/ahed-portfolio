@@ -1,50 +1,113 @@
-body {
+* {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
 }
 
 .hero {
   height: 100vh;
-  background: url('assets/images/2.png') no-repeat center center / cover;
+  background: url('3.png') no-repeat center center/cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+  justify-content: flex-end;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.info {
+  max-width: 500px;
 }
 
 h1 {
   font-size: 48px;
-  margin: 0;
+  font-weight: bold;
 }
 
 p {
+  font-size: 24px;
   font-style: italic;
-  margin-bottom: 20px;
+  color: #999;
+  margin: 10px 0 30px;
 }
 
 .buttons {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-  background: #FFD700;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: black;
-  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 30px;
   font-weight: bold;
-  transition: transform 0.2s ease;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(0px);
+  border: 3px solid transparent;
+}
+
+.btn.yellow {
+  background-color: #FFD500;
+  color: black;
+  border-color: transparent;
+}
+
+.btn.black {
+  background-color: black;
+  color: #FFD500;
+  border: 2px solid #FFD500;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 15px #FFD50080;
+  transform: scale(1.05);
 }
 
-.btn.outline {
-  background: transparent;
-  border: 2px solid #FFD700;
-  color: #FFD700;
+/* 🎯 Responsive Section */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

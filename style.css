@@ -27,7 +27,12 @@ body {
 
 /* HERO CONTENT */
 .hero-content {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
   max-width: 400px;
+  color: #fff;
 }
 .hero-content h1 {
   font-size: 3.5rem;

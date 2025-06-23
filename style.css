@@ -1,8 +1,21 @@
+/* ===== Hero Section & Image ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.hero-image {
+  width: 300px;
+  flex-shrink: 0;
+  margin-right: 2rem;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 /* ===== Hero Text & Buttons ===== */
 .hero-content {
   max-width: 500px;
-  margin: 2rem auto;
-  text-align: center;
 }
 .hero-content h1 {
   font-family: 'Courier Prime', monospace;

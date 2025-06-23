@@ -1,30 +1,30 @@
-/* ========== index.html ========== */
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ahed Mounis Hero</title>
-  <!-- Courier Prime -->
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- رابط ملف الـ CSS الذي يستورد الخطوط ويضبط التنسيقات -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <section class="hero">
-    <!-- بطاقة الصورة -->
+    <!-- بطاقة الصورة: طبقة مخدرة + نصف واضح بإطار -->
     <div class="image-card">
-      <img src="3.png" alt="Ahed Mounis">
+      <img src="3.png" alt="Ahed Mounis" class="blurred" />
+      <div class="clear-half">
+        <img src="3.png" alt="" class="clear" />
+      </div>
     </div>
 
-    <!-- النص والعناوين والأزرار -->
-    <div class="content">
+    <!-- محتوى الهيرو: العنوان، الوصف، الأزرار -->
+    <div class="hero-content">
       <h1>AHED MOUNIS</h1>
       <p>Art Director &amp; Motion Designer</p>
       <div class="buttons">
-        <a href="#" class="button">My Story</a>
-        <a href="#" class="button">My Work</a>
+        <a href="#story" class="btn">My Story</a>
+        <a href="#work"  class="btn">My Work</a>
       </div>
     </div>
   </section>

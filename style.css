@@ -16,6 +16,9 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
+  /* هذه الإضافة فقط: */
+  background: url('background.png') no-repeat center center/cover;
+  /* باقي الشروط كما هي: */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,9 +91,4 @@ body {
   padding: 0.75rem 1.5rem;
   border: 2px solid #111;
   border-radius: 9999px;
-  margin-right: 1rem;
-  transition: opacity 0.2s;
-}
-.buttons .btn:hover {
-  opacity: 0.85;
-}
+  margin

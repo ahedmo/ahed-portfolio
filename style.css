@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -7,28 +7,25 @@
 html, body {
   height: 100%;
 }
-
-/* ===== BODY ===== */
 body {
   font-family: 'Courier Prime', monospace;
-  background: #111;
-  color: #fff;
 }
 
-/* ===== HERO SECTION ===== */
+/* HERO SECTION - الخلفية الأصلية دون أي blur */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 100%;
   height: 100vh;
-  /* الخلفية الأصلية دون أي Blur أو تعديلات */
   background: url('3.png') no-repeat center center/cover;
 }
 
-/* ===== HERO CONTENT ===== */
+/* تثبيت النص والأزرار في الركن العلوي */
 .hero-content {
-  text-align: center;
-  padding: 2rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  max-width: 500px;
+  color: #fff;
 }
 .hero-content h1 {
   font-size: 3.5rem;
@@ -38,22 +35,23 @@ body {
 .hero-content p {
   font-size: 1.125rem;
   font-weight: 400;
-  color: #aaa;
+  color: #BBBBBB;
   margin-bottom: 1.5rem;
 }
 
-/* ===== BUTTONS ===== */
+/* الأزرار الصفراء */
 .buttons .btn {
   display: inline-block;
+  font-family: 'Courier Prime', monospace;
   font-size: 1rem;
   font-weight: 700;
   color: #111;
-  background: #FFD600;
+  background-color: #FFD600;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border: 2px solid #111;
   border-radius: 9999px;
-  margin: 0 0.5rem;
+  margin-right: 0.5rem;
   transition: transform 0.1s, opacity 0.2s;
 }
 .buttons .btn:hover {

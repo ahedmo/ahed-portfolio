@@ -311,3 +311,40 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+/* إعادة تعريف الأزرار لرسم الأسهم بـ CSS */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2;
+}
+
+/* نرسم السهم عبر pseudo-element */
+.scroll-btn::before {
+  content: '';
+  display: block;
+  width: 10px; 
+  height: 10px;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  border-color: #111;
+}
+
+/* سهم اليسار */
+.scroll-btn.left::before {
+  transform: rotate(-135deg);
+}
+
+/* سهم اليمين */
+.scroll-btn.right::before {
+  transform: rotate(45deg);
+}

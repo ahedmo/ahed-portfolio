@@ -41,22 +41,31 @@
     <p>Despite limited resources and the ongoing conflict in Gaza, I continuously develop my 3D expertise and elevate the quality of my work through determination and creativity.</p>
     <p><strong>I am Ahed Mounis.</strong></p>
   </section>
-
-    <!-- MY WORK SECTION -->
+ <!-- MY WORK -->
   <section id="work" class="work-section">
     <h2>My Work</h2>
 
     <!-- 1. Motion Graphics -->
     <section class="projects-section" data-section="motion">
       <h3>Motion Graphics</h3>
-     <button class="scroll-btn left" data-target="motion"></button>
+      <button class="scroll-btn left" data-target="motion">&#8249;</button>
       <div class="carousel" id="motion">
-        <!-- Motion items -->
         <div class="project-card">
           <video src="motion 1.mp4" muted loop playsinline></video>
           <h4>Motion Project 1</h4>
         </div>
-        <!-- ... additional motion items ... -->
+        <div class="project-card">
+          <video src="motion 2.mp4" muted loop playsinline></video>
+          <h4>Motion Project 2</h4>
+        </div>
+        <div class="project-card">
+          <video src="motion 3.mp4" muted loop playsinline></video>
+          <h4>Motion Project 3</h4>
+        </div>
+        <div class="project-card">
+          <video src="motion 4.mp4" muted loop playsinline></video>
+          <h4>Motion Project 4</h4>
+        </div>
       </div>
       <button class="scroll-btn right" data-target="motion">&#8250;</button>
     </section>
@@ -70,7 +79,14 @@
           <video src="logomotion 1.mp4" muted loop playsinline></video>
           <h4>Logo Animation 1</h4>
         </div>
-        <!-- ... additional logo items ... -->
+        <div class="project-card">
+          <video src="logomotion 2.mp4" muted loop playsinline></video>
+          <h4>Logo Animation 2</h4>
+        </div>
+        <div class="project-card">
+          <video src="logomotion 3.mp4" muted loop playsinline></video>
+          <h4>Logo Animation 3</h4>
+        </div>
       </div>
       <button class="scroll-btn right" data-target="logo">&#8250;</button>
     </section>
@@ -84,7 +100,14 @@
           <video src="3d 1.mp4" muted loop playsinline></video>
           <h4>3D Project 1</h4>
         </div>
-        <!-- ... additional 3D items ... -->
+        <div class="project-card">
+          <img src="3d 5.png" alt="3D Render">
+          <h4>3D Render 2</h4>
+        </div>
+        <div class="project-card">
+          <video src="3d 3.mp4" muted loop playsinline></video>
+          <h4>3D Project 3</h4>
+        </div>
       </div>
       <button class="scroll-btn right" data-target="3d">&#8250;</button>
     </section>
@@ -98,7 +121,14 @@
           <video src="editing 1.mp4" muted loop playsinline></video>
           <h4>Editing Project 1</h4>
         </div>
-        <!-- ... additional editing items ... -->
+        <div class="project-card">
+          <video src="editing 2.mp4" muted loop playsinline></video>
+          <h4>Editing Project 2</h4>
+        </div>
+        <div class="project-card">
+          <video src="editing 3.mp4" muted loop playsinline></video>
+          <h4>Editing Project 3</h4>
+        </div>
       </div>
       <button class="scroll-btn right" data-target="editing">&#8250;</button>
     </section>
@@ -112,7 +142,14 @@
           <video src="trio_logo E.mp4" muted loop playsinline></video>
           <h4>Trio Logo</h4>
         </div>
-        <!-- ... additional branding items ... -->
+        <div class="project-card">
+          <video src="logomotion 2.mp4" muted loop playsinline></video>
+          <h4>Green Brand Reveal</h4>
+        </div>
+        <div class="project-card">
+          <video src="logomotion 3.mp4" muted loop playsinline></video>
+          <h4>Dynamic Identity</h4>
+        </div>
       </div>
       <button class="scroll-btn right" data-target="branding">&#8250;</button>
     </section>
@@ -123,22 +160,29 @@
       <button class="scroll-btn left" data-target="static">&#8249;</button>
       <div class="carousel" id="static">
         <div class="project-card">
-          <img src="social 1.png" alt="Static Design 1" />
+          <img src="social 1.png" alt="Static 1">
           <h4>Social Post 1</h4>
         </div>
-        <!-- ... additional static items ... -->
+        <div class="project-card">
+          <img src="social 2.png" alt="Static 2">
+          <h4>Social Post 2</h4>
+        </div>
+        <div class="project-card">
+          <img src="social 3.png" alt="Static 3">
+          <h4>Social Post 3</h4>
+        </div>
       </div>
       <button class="scroll-btn right" data-target="static">&#8250;</button>
     </section>
+
   </section>
 
-  <!-- Scroll Script -->
   <script>
     document.querySelectorAll('.scroll-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const carousel = document.getElementById(btn.dataset.target);
         const scrollAmount = carousel.offsetWidth * 0.7;
-        if(btn.classList.contains('left')) {
+        if (btn.classList.contains('left')) {
           carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         } else {
           carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });

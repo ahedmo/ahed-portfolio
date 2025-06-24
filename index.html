@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ahed Mounis – My Work</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahed Mounis Portfolio</title>
+  <!-- Google Font: Courier Prime -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <!-- force 3 cards per row -->
   <style>
     .projects-grid {
@@ -18,169 +18,131 @@
   </style>
 </head>
 <body>
-  <!-- HERO -->
+    <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>AHED MOUNIS</h1>
       <p>Art Director &amp; Motion Designer</p>
       <div class="buttons">
         <a href="#story" class="btn">My Story</a>
-        <a href="#work"  class="btn">My Work</a>
+        <a href="#work" class="btn">My Work</a>
       </div>
     </div>
   </section>
 
-  <!-- STORY -->
+  <!-- Story Section -->
   <section id="story" class="story-section">
     <h2>My Story</h2>
-    <!-- … your story content … -->
+    <p>I was born in Gaza in 1998, and my passion for art and design started at a young age, sketching handmade illustrations before discovering the beauty of the digital world.</p>
+    <h3>Learning Journey</h3>
+    <p>I began by creating static designs and brand logos, then moved on to editing with Adobe Premiere, explored motion and effects in After Effects, and today I'm honing my skills in 3D modeling and animation with Blender.</p>
+    <h3>Professional Path</h3>
+    <p>I launched my career on the Motion X platform, worked as a freelancer on Upwork and similar sites, founded my own creative team, and later joined Dot Motion as an Art Director, leading talented teams to achieve outstanding results.</p>
+    <p>Despite limited resources and the ongoing conflict in Gaza, I continuously develop my 3D expertise and elevate the quality of my work through determination and creativity.</p>
+    <p><strong>I am Ahed Mounis.</strong></p>
   </section>
 
-  <!-- MY WORK -->
+    <!-- MY WORK SECTION -->
   <section id="work" class="work-section">
     <h2>My Work</h2>
 
     <!-- 1. Motion Graphics -->
-    <section id="motion" class="projects-section">
+    <section class="projects-section" data-section="motion">
       <h3>Motion Graphics</h3>
-      <div class="projects-grid">
+      <button class="scroll-btn left" data-target="motion">&#8249;</button>
+      <div class="carousel" id="motion">
+        <!-- Motion items -->
         <div class="project-card">
           <video src="motion 1.mp4" muted loop playsinline></video>
           <h4>Motion Project 1</h4>
-          <p>Short motion graphics showcase</p>
         </div>
-        <div class="project-card">
-          <video src="motion 2.mp4" muted loop playsinline></video>
-          <h4>Motion Project 2</h4>
-          <p>Animated promo clip</p>
-        </div>
-        <div class="project-card">
-          <video src="motion 3.mp4" muted loop playsinline></video>
-          <h4>Motion Project 3</h4>
-          <p>Dynamic social snippet</p>
-        </div>
-        <!-- if you have 6 items, the next 3 go on the next row automatically -->
+        <!-- ... additional motion items ... -->
       </div>
+      <button class="scroll-btn right" data-target="motion">&#8250;</button>
     </section>
 
     <!-- 2. Logo Animations -->
-    <section id="logo" class="projects-section">
+    <section class="projects-section" data-section="logo">
       <h3>Logo Animations</h3>
-      <div class="projects-grid">
+      <button class="scroll-btn left" data-target="logo">&#8249;</button>
+      <div class="carousel" id="logo">
         <div class="project-card">
           <video src="logomotion 1.mp4" muted loop playsinline></video>
           <h4>Logo Animation 1</h4>
-          <p>Brand reveal intro</p>
         </div>
-        <div class="project-card">
-          <video src="logomotion 2.mp4" muted loop playsinline></video>
-          <h4>Logo Animation 2</h4>
-          <p>Elegant logo reveal</p>
-        </div>
-        <div class="project-card">
-          <video src="logomotion 3.mp4" muted loop playsinline></video>
-          <h4>Logo Animation 3</h4>
-          <p>Creative logo loop</p>
-        </div>
+        <!-- ... additional logo items ... -->
       </div>
+      <button class="scroll-btn right" data-target="logo">&#8250;</button>
     </section>
 
-    <!-- 3. 3D Modeling -->
-    <section id="3d" class="projects-section">
+    <!-- 3. 3D Modeling & Animation -->
+    <section class="projects-section" data-section="3d">
       <h3>3D Modeling &amp; Animation</h3>
-      <div class="projects-grid">
+      <button class="scroll-btn left" data-target="3d">&#8249;</button>
+      <div class="carousel" id="3d">
         <div class="project-card">
           <video src="3d 1.mp4" muted loop playsinline></video>
           <h4>3D Project 1</h4>
-          <p>3D animation showcase</p>
         </div>
-        <div class="project-card">
-          <img src="3d 5.png" alt="3D Render 2">
-          <h4>3D Render 2</h4>
-          <p>Static 3D render</p>
-        </div>
-        <div class="project-card">
-          <video src="3d 3.mp4" muted loop playsinline></video>
-          <h4>3D Project 3</h4>
-          <p>Product visualization</p>
-        </div>
+        <!-- ... additional 3D items ... -->
       </div>
+      <button class="scroll-btn right" data-target="3d">&#8250;</button>
     </section>
 
     <!-- 4. Video Editing -->
-    <section id="editing" class="projects-section">
+    <section class="projects-section" data-section="editing">
       <h3>Video Editing</h3>
-      <div class="projects-grid">
+      <button class="scroll-btn left" data-target="editing">&#8249;</button>
+      <div class="carousel" id="editing">
         <div class="project-card">
           <video src="editing 1.mp4" muted loop playsinline></video>
           <h4>Editing Project 1</h4>
-          <p>Video editing showcase</p>
         </div>
-        <div class="project-card">
-          <video src="editing 2.mp4" muted loop playsinline></video>
-          <h4>Editing Project 2</h4>
-          <p>Creative edit highlights</p>
-        </div>
-        <div class="project-card">
-          <video src="editing 3.mp4" muted loop playsinline></video>
-          <h4>Editing Project 3</h4>
-          <p>Reel compilation</p>
-        </div>
+        <!-- ... additional editing items ... -->
       </div>
+      <button class="scroll-btn right" data-target="editing">&#8250;</button>
     </section>
 
-    <!-- 5. Branding -->
-    <section id="branding" class="projects-section">
+    <!-- 5. Branding Projects -->
+    <section class="projects-section" data-section="branding">
       <h3>Branding Projects</h3>
-      <div class="projects-grid">
+      <button class="scroll-btn left" data-target="branding">&#8249;</button>
+      <div class="carousel" id="branding">
         <div class="project-card">
           <video src="trio_logo E.mp4" muted loop playsinline></video>
           <h4>Trio Logo</h4>
-          <p>Logo reveal for Trio</p>
         </div>
-        <div class="project-card">
-          <video src="logomotion 2.mp4" muted loop playsinline></video>
-          <h4>Green Brand Reveal</h4>
-          <p>Brand introduction animation</p>
-        </div>
-        <div class="project-card">
-          <video src="logomotion 3.mp4" muted loop playsinline></video>
-          <h4>Dynamic Identity</h4>
-          <p>Animated brand visuals</p>
-        </div>
+        <!-- ... additional branding items ... -->
       </div>
+      <button class="scroll-btn right" data-target="branding">&#8250;</button>
     </section>
 
     <!-- 6. Static Designs -->
-    <section id="static" class="projects-section">
+    <section class="projects-section" data-section="static">
       <h3>Static Designs</h3>
-      <div class="projects-grid">
+      <button class="scroll-btn left" data-target="static">&#8249;</button>
+      <div class="carousel" id="static">
         <div class="project-card">
-          <img src="social 1.png" alt="Static Design 1">
+          <img src="social 1.png" alt="Static Design 1" />
           <h4>Social Post 1</h4>
-          <p>Ramadan social media post</p>
         </div>
-        <div class="project-card">
-          <img src="social 2.png" alt="Static Design 2">
-          <h4>Social Post 2</h4>
-          <p>Eid celebration design</p>
-        </div>
-        <div class="project-card">
-          <img src="social 3.png" alt="Static Design 3">
-          <h4>Social Post 3</h4>
-          <p>Promotional banner</p>
-        </div>
+        <!-- ... additional static items ... -->
       </div>
+      <button class="scroll-btn right" data-target="static">&#8250;</button>
     </section>
   </section>
 
-  <!-- Smooth scroll -->
+  <!-- Scroll Script -->
   <script>
-    document.querySelectorAll('.btn[href^="#"]').forEach(btn=>{
-      btn.addEventListener('click', e=>{
-        e.preventDefault();
-        const t = document.querySelector(btn.getAttribute('href'));
-        if(t) t.scrollIntoView({ behavior:'smooth' });
+    document.querySelectorAll('.scroll-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const carousel = document.getElementById(btn.dataset.target);
+        const scrollAmount = carousel.offsetWidth * 0.7;
+        if(btn.classList.contains('left')) {
+          carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
       });
     });
   </script>

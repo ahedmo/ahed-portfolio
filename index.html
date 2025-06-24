@@ -4,10 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ahed Mounis – My Work</title>
-  <!-- Google Font: Courier Prime -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"/>
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css"/>
+  <!-- force 3 cards per row -->
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  </style>
 </head>
 <body>
   <!-- HERO -->
@@ -22,16 +30,10 @@
     </div>
   </section>
 
-  <!-- STORY SECTION -->
+  <!-- STORY -->
   <section id="story" class="story-section">
     <h2>My Story</h2>
-    <p>I was born in Gaza in 1998, and my passion for art and design started at a young age, sketching handmade illustrations before discovering the beauty of the digital world.</p>
-    <h3>Learning Journey</h3>
-    <p>I began by creating static designs and brand logos, then moved on to editing with Adobe Premiere, explored motion and effects in After Effects, and today I'm honing my skills in 3D modeling and animation with Blender.</p>
-    <h3>Professional Path</h3>
-    <p>I launched my career on the Motion X platform, worked as a freelancer on Upwork and similar sites, founded my own creative team, and later joined Dot Motion as an Art Director, leading talented teams to achieve outstanding results.</p>
-    <p>Despite limited resources and the ongoing conflict in Gaza, I continuously develop my 3D expertise and elevate the quality of my work through determination and creativity.</p>
-    <p><strong>I am Ahed Mounis.</strong></p>
+    <!-- … your story content … -->
   </section>
 
   <!-- MY WORK -->
@@ -52,7 +54,12 @@
           <h4>Motion Project 2</h4>
           <p>Animated promo clip</p>
         </div>
-        <!-- إضافة باقي ملفات motion*.mp4 -->
+        <div class="project-card">
+          <video src="motion 3.mp4" muted loop playsinline></video>
+          <h4>Motion Project 3</h4>
+          <p>Dynamic social snippet</p>
+        </div>
+        <!-- if you have 6 items, the next 3 go on the next row automatically -->
       </div>
     </section>
 
@@ -63,18 +70,22 @@
         <div class="project-card">
           <video src="logomotion 1.mp4" muted loop playsinline></video>
           <h4>Logo Animation 1</h4>
-          <p>Brand logo reveal</p>
+          <p>Brand reveal intro</p>
         </div>
         <div class="project-card">
           <video src="logomotion 2.mp4" muted loop playsinline></video>
           <h4>Logo Animation 2</h4>
-          <p>Elegant logo intro</p>
+          <p>Elegant logo reveal</p>
         </div>
-        <!-- إضافة باقي ملفات logomotion*.mp4 -->
+        <div class="project-card">
+          <video src="logomotion 3.mp4" muted loop playsinline></video>
+          <h4>Logo Animation 3</h4>
+          <p>Creative logo loop</p>
+        </div>
       </div>
     </section>
 
-    <!-- 3. 3D Modeling & Animation -->
+    <!-- 3. 3D Modeling -->
     <section id="3d" class="projects-section">
       <h3>3D Modeling &amp; Animation</h3>
       <div class="projects-grid">
@@ -84,11 +95,15 @@
           <p>3D animation showcase</p>
         </div>
         <div class="project-card">
-          <img src="3d 5.png" alt="3D Project 2">
+          <img src="3d 5.png" alt="3D Render 2">
           <h4>3D Render 2</h4>
           <p>Static 3D render</p>
         </div>
-        <!-- إضافة باقي ملفات 3d*.mp4 و 3d*.png -->
+        <div class="project-card">
+          <video src="3d 3.mp4" muted loop playsinline></video>
+          <h4>3D Project 3</h4>
+          <p>Product visualization</p>
+        </div>
       </div>
     </section>
 
@@ -106,7 +121,11 @@
           <h4>Editing Project 2</h4>
           <p>Creative edit highlights</p>
         </div>
-        <!-- إضافة باقي ملفات editing*.mp4 -->
+        <div class="project-card">
+          <video src="editing 3.mp4" muted loop playsinline></video>
+          <h4>Editing Project 3</h4>
+          <p>Reel compilation</p>
+        </div>
       </div>
     </section>
 
@@ -120,11 +139,15 @@
           <p>Logo reveal for Trio</p>
         </div>
         <div class="project-card">
-          <video src="logomotion 3.mp4" muted loop playsinline></video>
+          <video src="logomotion 2.mp4" muted loop playsinline></video>
           <h4>Green Brand Reveal</h4>
           <p>Brand introduction animation</p>
         </div>
-        <!-- إضافة باقي ملفات branding/logo -->
+        <div class="project-card">
+          <video src="logomotion 3.mp4" muted loop playsinline></video>
+          <h4>Dynamic Identity</h4>
+          <p>Animated brand visuals</p>
+        </div>
       </div>
     </section>
 
@@ -142,18 +165,22 @@
           <h4>Social Post 2</h4>
           <p>Eid celebration design</p>
         </div>
-        <!-- إضافة باقي ملفات social*.png -->
+        <div class="project-card">
+          <img src="social 3.png" alt="Static Design 3">
+          <h4>Social Post 3</h4>
+          <p>Promotional banner</p>
+        </div>
       </div>
     </section>
   </section>
 
-  <!-- Smooth scroll script -->
+  <!-- Smooth scroll -->
   <script>
-    document.querySelectorAll('.btn[href^="#"]').forEach(btn => {
-      btn.addEventListener('click', function(e) {
+    document.querySelectorAll('.btn[href^="#"]').forEach(btn=>{
+      btn.addEventListener('click', e=>{
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        const t = document.querySelector(btn.getAttribute('href'));
+        if(t) t.scrollIntoView({ behavior:'smooth' });
       });
     });
   </script>

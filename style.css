@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  height: 100%;
   font-family: 'Courier Prime', monospace;
   background: url('3.png') no-repeat center center/cover;
   background-attachment: fixed;
@@ -101,7 +100,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255,255,255,0.05);
   backdrop-filter: blur(15px);
   z-index: -1;
 }
@@ -110,98 +109,45 @@ body {
   margin-bottom: 2rem;
 }
 
-/* PROJECTS CAROUSEL */
+/* PROJECTS GRID */
 .projects-section {
-  position: relative;
   margin-bottom: 4rem;
 }
 .projects-section h3 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 1.5rem;
-  padding: 0.5rem 2.5rem;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 .project-card {
-  min-width: calc((100% - 4rem) / 3);
   background: rgba(0,0,0,0.6);
   border-radius: 12px;
   overflow: hidden;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
 }
-.project-card img,
-.project-card video {
+.project-card video,
+.project-card img {
   width: 100%;
-  aspect-ratio: 9/16;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 .project-card h4 {
   margin: 0.5rem 0;
   color: #fff;
-}
-
-.scroll-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.7);
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-  z-index: 2;
-}
-.scroll-btn:hover {
-  opacity: 1;
-}
-.scroll-btn.left {
-  left: 0.5rem;
-}
-.scroll-btn.right {
-  right: 0.5rem;
-}
-.scroll-btn::before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-}
-.scroll-btn.left::before {
-  border-right: 8px solid #111;
-}
-.scroll-btn.right::before {
-  border-left: 8px solid #111;
-}
-.scroll-btn.left::before {
-  transform: rotate(-135deg);
-}
-.scroll-btn.right::before {
-  transform: rotate(45deg);
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .project-card {
-    min-width: calc((100% - 2rem) / 2);
-  }
-}
 @media (max-width: 480px) {
-  .project-card {
-    min-width: 100%;
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }

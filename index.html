@@ -1,3 +1,4 @@
+<!-- ملف HTML معدّل بدون CSS داخلي، يرتبط بملف style.css -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,35 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
-  <!-- force 3 cards per row -->
-  <style>
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-      /* Portrait orientation for videos/images */
-    .project-card video,
-    .project-card img {
-      width: 100%;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
-    }
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .project-card {
-        min-width: calc((100% - 2rem) / 2);
-      }
-    }
-    @media (max-width: 480px) {
-      .project-card {
-        min-width: 100%;
-      }
-    }
-  </style>
 </head>
 <body>
-    <!-- HERO -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>AHED MOUNIS</h1>
@@ -59,12 +34,11 @@
     <p>Despite limited resources and the ongoing conflict in Gaza, I continuously develop my 3D expertise and elevate the quality of my work through determination and creativity.</p>
     <p><strong>I am Ahed Mounis.</strong></p>
   </section>
- 
- 
+
+  <!-- Work Section -->
   <section id="work" class="work-section">
     <h2>My Work</h2>
 
-   
     <!-- 1. Motion Graphics -->
     <section class="projects-section" data-section="motion">
       <h3>Motion Graphics</h3>

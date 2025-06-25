@@ -1,13 +1,10 @@
-<!-- ملف HTML معدّل بدون CSS داخلي، يرتبط بملف style.css -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahed Mounis Portfolio</title>
-  <!-- Google Font: Courier Prime -->
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -23,72 +20,82 @@
     </div>
   </section>
 
-  <!-- Story Section -->
+  <!-- STORY SECTION -->
   <section id="story" class="story-section">
     <h2>My Story</h2>
     <p>I was born in Gaza in 1998, and my passion for art and design started at a young age, sketching handmade illustrations before discovering the beauty of the digital world.</p>
     <h3>Learning Journey</h3>
     <p>I began by creating static designs and brand logos, then moved on to editing with Adobe Premiere, explored motion and effects in After Effects, and today I'm honing my skills in 3D modeling and animation with Blender.</p>
     <h3>Professional Path</h3>
-    <p>I launched my career on the Motion X platform, worked as a freelancer on Upwork and similar sites, founded my own creative team, and later joined Dot Motion as an Art Director, leading talented teams to achieve outstanding results.</p>
+    <p>I launched my career on the Motion X platform, worked as a freelancer on Upwork, founded my own creative team, and later joined Dot Motion as an Art Director, leading talented teams to outstanding results.</p>
     <p>Despite limited resources and the ongoing conflict in Gaza, I continuously develop my 3D expertise and elevate the quality of my work through determination and creativity.</p>
     <p><strong>I am Ahed Mounis.</strong></p>
   </section>
 
-  <!-- Work Section -->
+  <!-- WORK SECTION -->
   <section id="work" class="work-section">
     <h2>My Work</h2>
 
-    <!-- 1. Motion Graphics -->
-    <section class="projects-section" data-section="motion">
+    <!-- Motion Graphics -->
+    <section class="projects-section">
       <h3>Motion Graphics</h3>
-      <button class="scroll-btn left" data-target="motion"></button>
-      <div class="carousel" id="motion">
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843983/motion_1_bz20ni.mp4" muted loop playsinline></video><h4>Motion 1</h4></div>
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844079/motion_2_ofwduj.mp4" muted loop playsinline></video><h4>Motion 2</h4></div>
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844044/motion_3_qq5bwt.mp4" muted loop playsinline></video><h4>Motion 3</h4></div>
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844020/motion_4_e5n9hl.mp4" muted loop playsinline></video><h4>Motion 4</h4></div>
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844506/motion_5_dohl4r.mp4" muted loop playsinline></video><h4>Motion 5</h4></div>
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844176/motion_6_g41wxm.mp4" muted loop playsinline></video><h4>Motion 6</h4></div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <video poster="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843907/social_1_xvfgv1.png" src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843983/motion_1_bz20ni.mp4" muted loop playsinline></video>
+          <h4>Motion 1</h4>
+        </div>
+        <div class="project-card">
+          <video poster="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843916/social_5_no5wlb.png" src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844079/motion_2_ofwduj.mp4" muted loop playsinline></video>
+          <h4>Motion 2</h4>
+        </div>
+        <div class="project-card">
+          <video poster="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843911/social_3_ps5wyc.png" src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844044/motion_3_qq5bwt.mp4" muted loop playsinline></video>
+          <h4>Motion 3</h4>
+        </div>
+        <div class="project-card">
+          <video poster="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843926/social_4_iwpxhq.png" src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844020/motion_4_e5n9hl.mp4" muted loop playsinline></video>
+          <h4>Motion 4</h4>
+        </div>
+        <div class="project-card">
+          <video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844506/motion_5_dohl4r.mp4" muted loop playsinline></video>
+          <h4>Motion 5</h4>
+        </div>
+        <div class="project-card">
+          <video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844176/motion_6_g41wxm.mp4" muted loop playsinline></video>
+          <h4>Motion 6</h4>
+        </div>
       </div>
-      <button class="scroll-btn right" data-target="motion"></button>
     </section>
 
-    <!-- 2. Logo Animations -->
-    <section class="projects-section" data-section="logo">
+    <!-- Logo Animations -->
+    <section class="projects-section">
       <h3>Logo Animations</h3>
-      <button class="scroll-btn left" data-target="logo"></button>
-      <div class="carousel" id="logo">
+      <div class="projects-grid">
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843973/logomotion_1_ulzsx9.mp4" muted loop playsinline></video><h4>Logo 1</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843908/logomotion_2_mmnjfw.mp4" muted loop playsinline></video><h4>Logo 2</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843911/logomotion_3_p9oqyq.mp4" muted loop playsinline></video><h4>Logo 3</h4></div>
       </div>
-      <button class="scroll-btn right" data-target="logo"></button>
     </section>
 
-    <!-- 3. 3D Modeling -->
-    <section class="projects-section" data-section="3d">
+    <!-- 3D Modeling -->
+    <section class="projects-section">
       <h3>3D Modeling</h3>
-      <button class="scroll-btn left" data-target="3d"></button>
-      <div class="carousel" id="3d">
+      <div class="projects-grid">
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844496/3d_1_p9z44c.mp4" muted loop playsinline></video><h4>3D 1</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843945/3d_2_livigb.mp4" muted loop playsinline></video><h4>3D 2</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843938/3d_3_p5u8uu.mp4" muted loop playsinline></video><h4>3D 3</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843999/3d_4_ugfav2.mp4" muted loop playsinline></video><h4>3D 4</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750850242/3d_5_ni37lc.png" alt="3D 5" /><h4>3D 5</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750844094/3d_6_decs72.png" alt="3D 6" /><h4>3D 6</h4></div>
-        <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844066/3d_7_umzcrc.mp4" muted loop playsinline></video><h4>3D 7</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843903/3d_8_yo0gir.png" alt="3D 8" /><h4>3D 8</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843917/3d_9_zksxfz.png" alt="3D 9" /><h4>3D 9</h4></div>
       </div>
-      <button class="scroll-btn right" data-target="3d"></button>
     </section>
 
-    <!-- 4. Static Designs -->
-    <section class="projects-section" data-section="static">
+    <!-- Static Designs -->
+    <section class="projects-section">
       <h3>Static Designs</h3>
-      <button class="scroll-btn left" data-target="static"></button>
-      <div class="carousel" id="static">
+      <div class="projects-grid">
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843907/social_1_xvfgv1.png" alt="Social 1" /><h4>Social 1</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843908/social_2_nrokkg.png" alt="Social 2" /><h4>Social 2</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843911/social_3_ps5wyc.png" alt="Social 3" /><h4>Social 3</h4></div>
@@ -96,14 +103,12 @@
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843916/social_5_no5wlb.png" alt="Social 5" /><h4>Social 5</h4></div>
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843917/social_6_hf4rp9.png" alt="Social 6" /><h4>Social 6</h4></div>
       </div>
-      <button class="scroll-btn right" data-target="static"></button>
     </section>
 
-    <!-- 5. Video Editing -->
-    <section class="projects-section" data-section="editing">
+    <!-- Video Editing -->
+    <section class="projects-section">
       <h3>Video Editing</h3>
-      <button class="scroll-btn left" data-target="editing"></button>
-      <div class="carousel" id="editing">
+      <div class="projects-grid">
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844903/editing_1_u07utj.mp4" muted loop playsinline></video><h4>Editing 1</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844693/editing_2_i9oqpu.mp4" muted loop playsinline></video><h4>Editing 2</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844262/editing_3_qggopg.mp4" muted loop playsinline></video><h4>Editing 3</h4></div>
@@ -112,26 +117,22 @@
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844817/editing_6_codss5.mp4" muted loop playsinline></video><h4>Editing 6</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750849891/Editing_7_grncdi.mp4" muted loop playsinline></video><h4>Editing 7</h4></div>
       </div>
-      <button class="scroll-btn right" data-target="editing"></button>
     </section>
 
-    <!-- 6. Direction Projects -->
-    <section class="projects-section" data-section="direction">
+    <!-- Direction Projects -->
+    <section class="projects-section">
       <h3>Direction Projects</h3>
-      <button class="scroll-btn left" data-target="direction"></button>
-      <div class="carousel" id="direction">
+      <div class="projects-grid">
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844707/Direction_1_khqvtb.mp4" muted loop playsinline></video><h4>Direction 1</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844219/Direction_2_yajsc2.mp4" muted loop playsinline></video><h4>Direction 2</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844675/Direction_3_rpqvb8.mp4" muted loop playsinline></video><h4>Direction 3</h4></div>
       </div>
-      <button class="scroll-btn right" data-target="direction"></button>
     </section>
 
-    <!-- 7. Reels Projects -->
-    <section class="projects-section" data-section="reels">
+    <!-- Reels -->
+    <section class="projects-section">
       <h3>Reels</h3>
-      <button class="scroll-btn left" data-target="reels"></button>
-      <div class="carousel" id="reels">
+      <div class="projects-grid">
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843946/reel_1_xpy4ub.mp4" muted loop playsinline></video><h4>Reel 1</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844097/reel_2_lglcjt.mp4" muted loop playsinline></video><h4>Reel 2</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844243/reel_3_dfvspr.mp4" muted loop playsinline></video><h4>Reel 3</h4></div>
@@ -139,19 +140,8 @@
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844162/reel_5_alusot.mp4" muted loop playsinline></video><h4>Reel 5</h4></div>
         <div class="project-card"><video src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844931/reel_6_hpsxag.mp4" muted loop playsinline></video><h4>Reel 6</h4></div>
       </div>
-      <button class="scroll-btn right" data-target="reels"></button>
     </section>
 
   </section>
-
-  <script>
-    document.querySelectorAll('.scroll-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const carousel = document.getElementById(btn.dataset.target);
-        const scrollAmount = carousel.offsetWidth * 0.7;
-        carousel.scrollBy({ left: btn.classList.contains('left') ? -scrollAmount : scrollAmount, behavior: 'smooth' });
-      });
-    });
-  </script>
 </body>
 </html>

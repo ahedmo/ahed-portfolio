@@ -147,7 +147,6 @@ body {
   color: #fff;
 }
 
-/* NAVIGATION BUTTONS */
 .scroll-btn {
   position: absolute;
   top: 50%;
@@ -176,11 +175,17 @@ body {
 }
 .scroll-btn::before {
   content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: solid #111;
-  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.scroll-btn.left::before {
+  border-right: 8px solid #111;
+}
+.scroll-btn.right::before {
+  border-left: 8px solid #111;
 }
 .scroll-btn.left::before {
   transform: rotate(-135deg);

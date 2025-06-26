@@ -22,7 +22,7 @@ body {
   justify-content: flex-end;
   height: 100vh;
   padding: 0 2rem;
-
+  /* الخلفية مأخوذة من body مباشرة */
 }
 .hero-content {
   position: absolute;
@@ -58,23 +58,22 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* STORY SECTION */
-.story-section {
+/* STORY & WORK SECTION BLUR BACKGROUND */
+.story-section, .work-section {
   position: relative;
   padding: 4rem 2rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-.story-section::before {
+.story-section::before, .work-section::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: -1;
 }
+
+/* STORY SECTION CONTENT */
 .story-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -91,19 +90,7 @@ body {
   font-style: italic;
 }
 
-/* WORK SECTION */
-.work-section {
-  position: relative;
-  padding: 4rem 2rem;
-}
-.work-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(15px);
-  z-index: -1;
-}
+/* WORK SECTION HEADER */
 .work-section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -117,20 +104,14 @@ body {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
- .projects-grid {
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .project-card {
-  background: rgba(0,0,0,0.6);
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1/1;
+  background: transparent;
+  /* أزل أو علق خاصية background: rgba(0,0,0,0.6); */
 }
 .project-card video,
 .project-card img {
@@ -138,16 +119,10 @@ body {
   height: 100%;
   object-fit: contain;
 }
-.project-card h4 {
-  margin: 0.5rem 0;
-  color: #fff;
-  font-size: 1rem;
-  text-align: center;
-}
 
 /* RESPONSIVE */
 @media (max-width: 480px) {
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }

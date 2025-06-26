@@ -22,7 +22,7 @@ body {
   justify-content: flex-end;
   height: 100vh;
   padding: 0 2rem;
-  background: url('3.png') center/cover no-repeat;
+
 }
 .hero-content {
   position: absolute;

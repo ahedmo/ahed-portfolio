@@ -22,7 +22,7 @@ body {
   justify-content: flex-end;
   height: 100vh;
   padding: 0 2rem;
-  /* الخلفية مأخوذة من body مباشرة */
+  /* الخلفية يأتي من body مباشرة */
 }
 .hero-content {
   position: absolute;
@@ -59,11 +59,13 @@ body {
 }
 
 /* STORY & WORK SECTION BLUR BACKGROUND */
-.story-section, .work-section {
+.story-section,
+.work-section {
   position: relative;
   padding: 4rem 2rem;
 }
-.story-section::before, .work-section::before {
+.story-section::before,
+.work-section::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -110,7 +112,7 @@ body {
   gap: 1rem;
 }
 .project-card {
-  background: rgba(0,0,0,0.0);
+  background: transparent;
   border-radius: 12px;
   overflow: hidden;
   display: flex;

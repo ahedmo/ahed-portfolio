@@ -137,6 +137,17 @@
     </section>
 
   </section>
-
+ <script>
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.muted = true;
+      video.play();
+      video.addEventListener('click', () => {
+        videos.forEach(v => v.muted = true);
+        video.muted = false;
+      });
+    });
+  </script>
+  
 </body>
 </html>

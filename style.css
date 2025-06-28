@@ -7,6 +7,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  font-family: 'Courier Prime', monospace;
+  background: url('3.png') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* SCROLL TO TOP BUTTON */
 #scrollTopBtn {
   position: fixed;
   bottom: 30px;
@@ -26,14 +36,6 @@ html {
 }
 #scrollTopBtn:hover {
   opacity: 0.8;
-}
-
-body {
-  font-family: 'Courier Prime', monospace;
-  background: url('3.png') no-repeat center center/cover;
-  background-attachment: fixed;
-  color: #fff;
-  overflow-x: hidden;
 }
 
 /* HERO SECTION */
@@ -95,10 +97,10 @@ body {
   z-index: -1;
 }
 
-/* STORY SECTION CONTENT */
-.story-section h2 {
+.story-section h2,
+.work-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .story-section h3 {
   font-size: 1.75rem;
@@ -112,12 +114,6 @@ body {
   font-style: italic;
 }
 
-/* WORK SECTION HEADER */
-.work-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
 /* PROJECTS GRID */
 .projects-section {
   margin-bottom: 4rem;
@@ -128,18 +124,10 @@ body {
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
 }
-
-@media (min-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr); /* ✅ 3 أعمدة فقط */
-  }
-}
-
 .project-card {
-  background: transparent;
   background: rgba(0,0,0,0.2);
   border-radius: 12px;
   overflow: hidden;
@@ -156,7 +144,6 @@ body {
   object-fit: contain;
 }
 
-/* RESPONSIVE GRID */
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -168,7 +155,6 @@ body {
   }
 }
 
-/* HERO CENTERING ON MOBILE */
 @media (max-width: 768px) {
   .hero-content {
     position: static;
@@ -177,64 +163,65 @@ body {
     text-align: center;
     padding: 2rem 0;
   }
-
   .buttons {
     justify-content: center;
   }
-
   .projects-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
-/* حاوية كاملة */
-.floating-bar-container {
+
+/* FLOATING SOCIAL BAR */
+.floating-bar {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 1rem;
-  z-index: 999;
   flex-wrap: wrap;
-}
-
-/* زر واتساب منفصل */
-.whatsapp-btn {
+  gap: 1rem;
   background: rgba(255, 236, 179, 0.12);
-  border: 1px solid rgba(255, 236, 179, 0.3);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  align-items: center;
+}
+
+.glass-btn-container {
+  margin-right: 1rem;
+}
+
+.glass-btn {
+  color: #fff;
   font-weight: 600;
+  background: rgba(255, 236, 179, 0.12);
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: all 0.2s;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  transition: background 0.2s, transform 0.2s;
 }
 
-.whatsapp-btn:hover {
+.glass-btn:hover {
   background: rgba(255, 236, 179, 0.2);
   transform: scale(1.05);
 }
 
-/* شريط الأيقونات */
 .glass-icons {
   display: flex;
   gap: 0.5rem;
-  background: rgba(255, 236, 179, 0.12);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  padding: 0.5rem 0.75rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 236, 179, 0.3);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .glass-icons a {
+  background: rgba(255, 236, 179, 0.12);
+  border: 1px solid rgba(255, 236, 179, 0.3);
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -244,9 +231,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
-  background: rgba(255, 236, 179, 0.12);
-  border: 1px solid rgba(255, 236, 179, 0.3);
-  transition: transform 0.2s, background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .glass-icons a:hover {
@@ -254,3 +239,5 @@ body {
   transform: scale(1.1);
 }
 
+/* Fix Tabler Icons Visibility */
+@import url('https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css');

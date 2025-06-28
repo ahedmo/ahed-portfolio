@@ -171,73 +171,64 @@ body {
   }
 }
 
-/* FLOATING SOCIAL BAR */
-.floating-bar {
+/* FLOATING SOCIAL BAR */.cta-bar {
   position: fixed;
-  bottom: 20px;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
-  background: rgba(255, 236, 179, 0.12);
+  background: rgba(255, 236, 179, 0.12); /* أصفر شفاف */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 999px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  z-index: 9999;
   border: 1px solid rgba(255, 236, 179, 0.3);
+  z-index: 999;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.glass-btn-container {
-  margin-right: 1rem;
-}
-
-.glass-btn {
-  color: #fff;
-  font-weight: 600;
+.cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
   background: rgba(255, 236, 179, 0.12);
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  font-weight: 600;
   border: 1px solid rgba(255, 236, 179, 0.3);
-  transition: background 0.2s, transform 0.2s;
+  transition: transform 0.2s, background 0.2s;
 }
 
-.glass-btn:hover {
+.cta-btn:hover {
   background: rgba(255, 236, 179, 0.2);
   transform: scale(1.05);
 }
 
-.glass-icons {
+.cta-icons {
   display: flex;
   gap: 0.5rem;
 }
 
-.glass-icons a {
-  background: rgba(255, 236, 179, 0.12);
-  border: 1px solid rgba(255, 236, 179, 0.3);
+.cta-icons a {
+  display: flex;
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  transition: background 0.2s, transform 0.2s;
+  font-size: 1.2rem;
+  background: rgba(255, 236, 179, 0.12);
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  transition: transform 0.2s, background 0.2s;
 }
 
-.glass-icons a:hover {
-  background: rgba(255, 236, 179, 0.25);
+.cta-icons a:hover {
   transform: scale(1.1);
+  background: rgba(255, 236, 179, 0.2);
 }
 
-/* Fix Tabler Icons Visibility */
-@import url('https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css');

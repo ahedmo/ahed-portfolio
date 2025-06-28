@@ -171,13 +171,19 @@ body {
   }
 }
 
-/* FLOATING SOCIAL BAR */.cta-bar {
+/* FLOATING SOCIAL BAR */
+/* FLOATING SOCIAL BAR */
+.cta-bar {
   position: fixed;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: fit-content;
+  max-width: 90%;
   background: rgba(255, 236, 179, 0.12); /* أصفر شفاف */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -185,10 +191,9 @@ body {
   border-radius: 999px;
   border: 1px solid rgba(255, 236, 179, 0.3);
   z-index: 999;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
+/* الزر */
 .cta-btn {
   display: flex;
   align-items: center;
@@ -201,6 +206,7 @@ body {
   font-weight: 600;
   border: 1px solid rgba(255, 236, 179, 0.3);
   transition: transform 0.2s, background 0.2s;
+  white-space: nowrap;
 }
 
 .cta-btn:hover {
@@ -208,6 +214,7 @@ body {
   transform: scale(1.05);
 }
 
+/* الأيقونات */
 .cta-icons {
   display: flex;
   gap: 0.5rem;
@@ -215,13 +222,13 @@ body {
 
 .cta-icons a {
   display: flex;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background: rgba(255, 236, 179, 0.12);
   border: 1px solid rgba(255, 236, 179, 0.3);
   transition: transform 0.2s, background 0.2s;
@@ -231,4 +238,3 @@ body {
   transform: scale(1.1);
   background: rgba(255, 236, 179, 0.2);
 }
-

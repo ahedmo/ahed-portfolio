@@ -128,7 +128,7 @@ body {
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
 }
 .project-card {
@@ -164,13 +164,18 @@ body {
 /* HERO CENTERING ON MOBILE */
 @media (max-width: 768px) {
   .hero-content {
-    left: 50%;
-    right: auto;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
+    max-width: 100%;
     text-align: center;
-    max-width: 90%;
+    padding: 2rem 0;
   }
-  .hero-content h1 { font-size: 2.5rem; }
-  .hero-content p  { font-size: 1rem; }
-  .buttons .btn    { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }

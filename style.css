@@ -194,32 +194,35 @@ body {
   transform: translateX(-50%);
   display: flex;
   gap: 1rem;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 236, 179, 0.12); /* أصفر خفيف */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   padding: 0.75rem 1.25rem;
   border-radius: 999px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   z-index: 999;
   align-items: center;
   flex-wrap: wrap;
+  border: 1px solid rgba(255, 236, 179, 0.3);
 }
 
 .glass-btn {
-  color: white;
+  color: #fff;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 236, 179, 0.12);
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  transition: background 0.2s;
-  border: 1px solid rgba(255,255,255,0.2);
+  gap: 0.5rem;
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  transition: background 0.2s, transform 0.2s;
 }
 
 .glass-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 236, 179, 0.2);
+  transform: scale(1.05);
 }
 
 .glass-icons {
@@ -228,8 +231,8 @@ body {
 }
 
 .glass-icons a {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255, 236, 179, 0.12);
+  border: 1px solid rgba(255, 236, 179, 0.3);
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -238,11 +241,11 @@ body {
   justify-content: center;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: background 0.2s, transform 0.2s;
 }
 
 .glass-icons a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+  background: rgba(255, 236, 179, 0.25);
+  transform: scale(1.1);
 }

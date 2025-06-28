@@ -168,25 +168,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 </script>
- <script>
-  const videos = document.querySelectorAll("video");
-
-  videos.forEach(video => {
-    video.addEventListener("click", () => {
-      // أول شيء، نوقف الصوت عن باقي الفيديوهات
-      videos.forEach(v => {
-        v.muted = true;
-        v.pause();
-        v.currentTime = 0;
-        v.play();
-      });
-
-      // بعدين نشغل الصوت للفيديو اللي تم الضغط عليه
-      video.muted = false;
-    });
-  });
-</script>
-  <script>
+<script>
   const videos = document.querySelectorAll("video");
 
   videos.forEach(video => {

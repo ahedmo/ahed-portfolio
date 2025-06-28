@@ -186,6 +186,22 @@
     });
   });
 </script>
+  <script>
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach(video => {
+    video.addEventListener("click", () => {
+      videos.forEach(v => {
+        v.muted = true;
+        v.pause();
+        v.currentTime = 0;
+        v.play();
+      });
+      video.muted = false;
+    });
+  });
+</script>
+
 
 </body>
 </html>

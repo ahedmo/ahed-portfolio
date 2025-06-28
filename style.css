@@ -186,53 +186,55 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
-/* FLOATING SOCIAL BAR */
-.floating-bar {
+/* حاوية كاملة */
+.floating-bar-container {
   position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 1rem;
-  background: rgba(255, 236, 179, 0.12); /* أصفر خفيف */
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  padding: 0.75rem 1.25rem;
-  border-radius: 999px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   z-index: 999;
-  align-items: center;
   flex-wrap: wrap;
-  border: 1px solid rgba(255, 236, 179, 0.3);
 }
 
-.glass-btn {
-  color: #fff;
-  font-weight: 600;
+/* زر واتساب منفصل */
+.whatsapp-btn {
   background: rgba(255, 236, 179, 0.12);
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: white;
+  font-weight: 600;
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid rgba(255, 236, 179, 0.3);
-  transition: background 0.2s, transform 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.glass-btn:hover {
+.whatsapp-btn:hover {
   background: rgba(255, 236, 179, 0.2);
   transform: scale(1.05);
 }
 
+/* شريط الأيقونات */
 .glass-icons {
   display: flex;
   gap: 0.5rem;
+  background: rgba(255, 236, 179, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .glass-icons a {
-  background: rgba(255, 236, 179, 0.12);
-  border: 1px solid rgba(255, 236, 179, 0.3);
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -242,10 +244,13 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
-  transition: background 0.2s, transform 0.2s;
+  background: rgba(255, 236, 179, 0.12);
+  border: 1px solid rgba(255, 236, 179, 0.3);
+  transition: transform 0.2s, background 0.2s;
 }
 
 .glass-icons a:hover {
   background: rgba(255, 236, 179, 0.25);
   transform: scale(1.1);
 }
+

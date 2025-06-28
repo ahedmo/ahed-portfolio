@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <title>Ahed Mounis Portfolio</title>
   <!-- Google Font: Courier Prime -->
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
@@ -40,7 +41,7 @@
     <h2>My Work</h2>
 
     <!-- Motion Graphics -->
-    <section class="projects-section">
+    <section class="projects-section" data-aos="fade-up">
       <h3>Motion Graphics</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843983/motion_1_bz20ni.mp4"></video></div>
@@ -53,7 +54,7 @@
     </section>
 
     <!-- Logo Animations -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>Logo Animations</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843973/logomotion_1_ulzsx9.mp4"></video></div>
@@ -63,7 +64,7 @@
     </section>
 
     <!-- 3D Modeling -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>3D Modeling</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844496/3d_1_p9z44c.mp4"></video></div>
@@ -79,7 +80,7 @@
     </section>
 
     <!-- Static Designs -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>Static Designs</h3>
       <div class="projects-grid">
         <div class="project-card"><img src="https://res.cloudinary.com/dtzxa9f1k/image/upload/v1750843907/social_1_xvfgv1.png" alt=""></div>
@@ -92,7 +93,7 @@
     </section>
 
     <!-- Video Editing -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>Video Editing</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750849891/Editing_7_grncdi.mp4"></video></div>
@@ -105,7 +106,7 @@
     </section>
 
     <!-- Direction Projects -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>Direction Projects</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844707/Direction_1_khqvtb.mp4"></video></div>
@@ -115,7 +116,7 @@
     </section>
 
     <!-- Reels -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>Reels</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750843946/reel_1_xpy4ub.mp4"></video></div>
@@ -128,7 +129,7 @@
     </section>
 
     <!-- Play Projects -->
-    <section class="projects-section">
+    <section class="projects-section data-aos="fade-up"">
       <h3>Play Projects</h3>
       <div class="projects-grid">
         <div class="project-card"><video controls muted loop playsinline src="https://res.cloudinary.com/dtzxa9f1k/video/upload/v1750844109/play_2_nhcolj.mp4"></video></div>
@@ -148,6 +149,12 @@
       });
     });
   </script>
-  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </body>
 </html>
